@@ -1,0 +1,50 @@
+.header {
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & button {
+        background-color: mediumaquamarine;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        padding: 15px;
+        font-family: Inconsolata, cursive;
+        font-size: 20px;
+    }
+
+    & button:hover {
+        background-color: darkgrey;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .search {
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 1px 1px;
+
+            & input {
+                border: none;
+                width: 500px;
+                font-size: 20px;
+            }
+        }
+        color: black;
+        font-size: 25px;
+        font-family: Likhan, cursive;
+        gap: 30px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+

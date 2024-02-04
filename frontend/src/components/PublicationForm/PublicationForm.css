@@ -1,0 +1,41 @@
+.main-publication {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", fantasy;
+    color: darkslateblue;
+    & label {
+        font-size: 20px;
+    }
+    .publication-create {
+        .form-item-title {
+            display: grid;
+            gap: 15px;
+            & input {
+                width: 300px;
+                font-size: 15px;
+            }
+        }
+        .form-item-descr {
+            display: grid;
+            gap: 15px;
+            & textarea {
+                width: 300px;
+                height: 100px;
+                font-size: 15px;
+            }
+        }
+        & button {
+            color: darkslateblue;
+            background-color: mediumaquamarine;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 5px;
+            font-size: 15px;
+        }
+        & button:hover {
+            background-color: darkgrey;
+        }
+    }
+}

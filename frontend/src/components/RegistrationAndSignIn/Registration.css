@@ -1,0 +1,38 @@
+.autorization {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", fantasy;
+    color: darkslateblue;
+    & label {
+        font-size: 20px;
+    }
+    .auth {
+        display: grid;
+        & input {
+            width: 300px;
+            font-size: 15px;
+        }
+
+        .login {
+            display: grid;
+            gap: 15px;
+        }
+        .password {
+            display: grid;
+            gap: 15px;
+        }
+        & button {
+            color: darkslateblue;
+            background-color: mediumaquamarine;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 5px;
+            font-size: 15px;
+        }
+        & button:hover {
+            background-color: darkgrey;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+  .main {
+      .list {
+          background: lightcyan;
+          display: grid;
+          place-items: center;
+          padding-top: 10px;
+      }
+   }

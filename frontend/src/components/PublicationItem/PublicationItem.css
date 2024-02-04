@@ -1,0 +1,67 @@
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    width: 50vw;
+    border-radius: 30px;
+    background: lightseagreen;
+    & p {
+        color: midnightblue;
+        font-size: 30px;
+        font-family: Inconsolata, cursive;
+    }
+
+    & img {
+        width: 500px;
+        height: 500px;
+    }
+
+    & b {
+        background-color: azure;
+        border-radius: 15px;
+        font-family: "Courier New", cursive;
+        padding: 10px;
+    }
+
+    .reactions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .like {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red;
+            transform: scale(1.8);
+            width: 100px;
+        }
+
+        .comment {
+            color: midnightblue;
+            transform: scale(1.8);
+        }
+
+        .redact {
+            display: flex;
+            margin-left: 300px;
+            gap: 15px;
+            & button {
+                background-color: mediumaquamarine;
+                border: none;
+                cursor: pointer;
+                border-radius: 6px;
+                padding: 15px;
+                font-family: Inconsolata, cursive;
+                font-size: 20px;
+            }
+            & button:hover {
+                background-color: darkgrey;
+            }
+        }
+    }
+}
+

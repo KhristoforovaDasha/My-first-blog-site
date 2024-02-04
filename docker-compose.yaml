@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./backend/
+    ports: # expose
+      - "3001:3001"
+    volumes:
+      - ./log:/log
+    environment:
+      - AUTH_SIGNING_KEY=sljefsuiefhnshjef
+      - DB_URI=test.db
+    restart: unless-stopped
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend/
+    ports: # expose
+      - "3000:3000"
+    command: serve -s /usr/src/app/build -l 3000
+    depends_on:
+      - backend
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx/
+    volumes:
+      - ./log:/log
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+
