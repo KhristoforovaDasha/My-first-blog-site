@@ -7,6 +7,6 @@
 
 Возможность просмотра публикаций, а также добавлять, удалять, редактировать публикации, лайкать и комментировать их
 
-Сссылка на диазйн моего блога в figma https://www.figma.com/file/nQ3UDp8fxAXQ6ux1bpA4CM/Design-of-my-blog?type=design&node-id=0-1&mode=design&t=0xggmW2HVyVe34U3-0
+Сссылка на дизайн моего блога в figma https://www.figma.com/file/nQ3UDp8fxAXQ6ux1bpA4CM/Design-of-my-blog?type=design&node-id=0-1&mode=design&t=0xggmW2HVyVe34U3-0
 
 На первой странице не для владельцев блога не будут отображаться кнопки add publication и edit/delete
